@@ -36,10 +36,10 @@ public class EmployeeController {
         return employeeService.findAll();
     }
 
-    @PutMapping("/updateById/{employeeId}")
-    public void updateById(@RequestBody EmployeeRequest employeeRequest, @PathVariable Long employeeId) {
-        employeeService.updateById(employeeId, employeeRequest);
-    }
+//    @PutMapping("/updateById/{employeeId}")
+//    public void updateById(@RequestBody EmployeeRequest employeeRequest, @PathVariable Long employeeId) {
+//        employeeService.updateById(employeeId, employeeRequest);
+//    }
 
     @DeleteMapping("/{employeeId}")
     public String deleteById(@PathVariable Long employeeId) {
